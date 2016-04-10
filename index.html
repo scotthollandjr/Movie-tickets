@@ -11,32 +11,39 @@
     <div class="container">
       <div class="row">
         <form id="ticket-pricer">
-          <div class="form-group">
-            <label for="age">Age</label></br>
-            <input type="radio" name="radAge" value="12" class="age">Child (12 and under)<br>
-            <input type="radio" name="radAge" value="13" class="age">Adult<br>
-            <input type="radio" name="radAge" value="65" class="age">Senior (65 and over)<br>
-          </div> <!-- class form-group -->
-          <div class="form-group">
-            <label for="timeSelect">Time</label></br>
-            <select class="form-control" id="timeSelect">
-              <option selected disabled> - select a time -</option>
-              <option value="215" class="time"> 2:15</option>
-              <option value="430" class="time"> 4:30</option>
-              <option value="545" class="time"> 5:45</option>
-              <option value="700" class="time"> 7:00</option>
-              <option value="930" class="time"> 9:30</option>
-            </select>
-          </div> <!-- class form-group-->
-          <div class="form-group">
-            <label for="movie">Movie</label><br>
-            <input type="image" class="poster" src="img/summer.jpg">
-            <input type="image" class="poster" src="img/mononoke.jpg">
-            <input type="image" class="poster" src="img/fellowship.jpg">
-            <input type="image" class="poster" src="img/walle.jpg">
-            <input type="image" class="poster" src="img/element.jpg">
-            <input type="image" class="poster" src="img/aladdin.jpg">
-          </div> <!-- class form-group -->
+          <div class="ticket-pricer">
+            <div class="form-group">
+              <label for="age">Age</label></br>
+              <input type="radio" name="radAge" value="12" class="age">Child (12 and under)<br>
+              <input type="radio" name="radAge" value="13" class="age">Adult<br>
+              <input type="radio" name="radAge" value="65" class="age">Senior (65 and over)<br>
+            </div> <!-- class form-group -->
+
+            <div class="form-group">
+              <label for="timeSelect">Time</label></br>
+              <select class="form-control" id="timeSelect">
+                <option value="215" class="time"> 2:15</option>
+                <option value="430" class="time"> 4:30</option>
+                <option value="545" class="time"> 5:45</option>
+                <option value="700" class="time"> 7:00</option>
+                <option value="930" class="time"> 9:30</option>
+              </select>
+            </div> <!-- class form-group-->
+
+            <div class="form-group">
+              <label for="movieSelect">Movie</label><br>
+              <select class="form-control" id="movieSelect">
+                <option value="newRelease" class="movie">500 Days of Summer</option>
+                <option value="oldRelease" class="movie">Princess Mononoke</option>
+                <option value="newRelease" class="movie">Lord of the Rings: The Fellowship of the Ring</option>
+                <option value="oldRelease" class="movie">Wall-e</option>
+                <option value="oldRelease" class="movie">The Fifth Element</option>
+                <option value="newRelease" class="movie">Aladdin</option>
+              </select>
+            </div> <!-- class form-group -->
+            <span class="btn btn-primary" id="add-tickets">Add Ticket</span>
+            <button type="submit" class="btn">Get Tickets!</button>
+          </div> <!-- class ticket-pricer -->
         </form>
       </div> <!-- class row -->
     </div> <!-- class container -->
