@@ -10,41 +10,48 @@
   <body>
     <div class="container">
       <div class="row">
-        <form id="ticket-pricer">
-          <div class="ticket-pricer">
-            <div class="form-group">
-              <label for="age">Age</label></br>
-              <input type="radio" name="radAge" value="12" class="age">Child (12 and under)<br>
-              <input type="radio" name="radAge" value="13" class="age">Adult<br>
-              <input type="radio" name="radAge" value="65" class="age">Senior (65 and over)<br>
-            </div> <!-- class form-group -->
+        <div class="col-md-6">
+          <form id="ticket-pricer">
+            <div class="ticket-pricer">
+              <div class="form-group">
+                <label for="age">Age</label></br>
+                <input type="radio" name="radAge" value="12" class="Child">Child (12 and under)<br>
+                <input type="radio" name="radAge" value="13" class="Adult">Adult<br>
+                <input type="radio" name="radAge" value="65" class="Senior">Senior (65 and over)<br>
+              </div> <!-- class form-group -->
 
-            <div class="form-group">
-              <label for="timeSelect">Time</label></br>
-              <select class="form-control" id="timeSelect">
-                <option value="215" class="time"> 2:15</option>
-                <option value="430" class="time"> 4:30</option>
-                <option value="545" class="time"> 5:45</option>
-                <option value="700" class="time"> 7:00</option>
-                <option value="930" class="time"> 9:30</option>
-              </select>
-            </div> <!-- class form-group-->
+              <div class="form-group">
+                <label for="timeSelect">Time</label></br>
+                <select class="form-control" id="timeSelect">
+                  <option value="215" class="2:15"> 2:15</option>
+                  <option value="430" class="4:30"> 4:30</option>
+                  <option value="545" class="5:45"> 5:45</option>
+                  <option value="700" class="7:00"> 7:00</option>
+                  <option value="930" class="9:30"> 9:30</option>
+                </select>
+              </div> <!-- class form-group-->
 
-            <div class="form-group">
-              <label for="movieSelect">Movie</label><br>
-              <select class="form-control" id="movieSelect">
-                <option value="newRelease" class="movie">500 Days of Summer</option>
-                <option value="oldRelease" class="movie">Princess Mononoke</option>
-                <option value="newRelease" class="movie">Lord of the Rings: The Fellowship of the Ring</option>
-                <option value="oldRelease" class="movie">Wall-e</option>
-                <option value="oldRelease" class="movie">The Fifth Element</option>
-                <option value="newRelease" class="movie">Aladdin</option>
-              </select>
-            </div> <!-- class form-group -->
-            <span class="btn btn-primary" id="add-tickets">Add Ticket</span>
-            <button type="submit" class="btn">Get Tickets!</button>
-          </div> <!-- class ticket-pricer -->
-        </form>
+              <div class="form-group">
+                <label for="movieSelect">Movie</label><br>
+                <select class="form-control" id="movieSelect">
+                  <option value="newRelease" class="movie">500 Days of Summer</option>
+                  <option value="oldRelease" class="movie">Princess Mononoke</option>
+                  <option value="newRelease" class="movie">Lord of the Rings: The Fellowship of the Ring</option>
+                  <option value="oldRelease" class="movie">Wall-e</option>
+                  <option value="oldRelease" class="movie">The Fifth Element</option>
+                  <option value="newRelease" class="movie">Aladdin</option>
+                </select>
+              </div> <!-- class form-group -->
+              <span class="btn btn-primary" id="add-tickets">Add Ticket</span>
+              <button type="submit" class="btn">Get Tickets!</button>
+            </div> <!-- class ticket-pricer -->
+          </form>
+        </div> <!-- class col-md-6 -->
+        <div class="col-md-6">
+          <ul id="ticket-display">
+
+          </ul>
+        </div>
       </div> <!-- class row -->
     </div> <!-- class container -->
   </body>
